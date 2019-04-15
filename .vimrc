@@ -51,9 +51,10 @@ set spell spelllang=en_gb
 
 let g:ale_open_list = 1
 let g:ale_linters_explicit = 1
-let b:ale_linters = ['eslint']
+let b:ale_linters = ['eslint', 'cargo']
 let g:ale_fixers = {
   \ 'javascript': ['eslint'],
+  \ 'rust': ['cargo'],
   \ }
 
 noremap <Up> <NOP>
