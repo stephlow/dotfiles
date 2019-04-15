@@ -12,6 +12,7 @@ Plug 'elixir-editors/vim-elixir'
 
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
+Plug 'styled-components/vim-styled-components'
 
 Plug 'supercollider/scvim'
 Plug 'gmoe/vim-faust'
