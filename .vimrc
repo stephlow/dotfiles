@@ -16,6 +16,7 @@ Plug 'styled-components/vim-styled-components'
 
 Plug 'supercollider/scvim'
 Plug 'gmoe/vim-faust'
+Plug 'tidalcycles/vim-tidal'
 
 call plug#end()
 
