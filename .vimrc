@@ -1,4 +1,6 @@
 call plug#begin()
+Plug 'embear/vim-localvimrc'
+
 Plug 'ayu-theme/ayu-vim' " Theme
 Plug 'Yggdroot/indentLine' " Visual line indention
 Plug 'vim-airline/vim-airline' " Status/tab line
