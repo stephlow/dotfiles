@@ -1,0 +1,9 @@
+[submodule "gruvbox-zsh"]
+	path = gruvbox-zsh
+	url = git@github.com:sbugzu/gruvbox-zsh.git
+[submodule "iterm2-gruvbox"]
+	path = iterm2-gruvbox
+	url = git@github.com:herrbischoff/iterm2-gruvbox.git
+[submodule "sonokai"]
+	path = sonokai
+	url = git@github.com:sainnhe/sonokai.git
