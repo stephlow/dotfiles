@@ -20,13 +20,12 @@ echo "initializing ghostty"
 echo "initializing git"
 ./git/init.sh
 
-echo "initializing nvim"
-./nvim/init.sh
-
 echo "initializing rust"
 ./rust/init.sh
 
 echo "initializing node"
 ./node/init.sh
 
+echo "initializing nvim"
+./nvim/init.sh
 

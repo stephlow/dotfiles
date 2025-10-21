@@ -12,6 +12,6 @@ else
 fi
 
 echo "adding rust components"
-rustup component add rustfmt clippy
+rustup component add rustfmt clippy rust-analyzer
 
 echo "rust initialized"
