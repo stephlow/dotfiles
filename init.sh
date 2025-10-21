@@ -6,6 +6,9 @@ echo "initializing system"
 if command -v pacman &> /dev/null; then
     echo "initializing hypr"
     ./hypr/init.sh
+
+    echo "initializing anyrun"
+    ./anyrun/init.sh
 fi
 
 echo "initializing zsh"
