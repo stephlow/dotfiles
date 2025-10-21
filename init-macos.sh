@@ -2,8 +2,9 @@
 
 echo "initializing dotfiles for macos"
 
-echo "installing neovim, pnpm, and rust"
+echo "installing neovim, pnpm, rustup, and ghostty"
 brew install neovim pnpm rustup
+brew install --cask ghostty
 
 echo "installing colima and docker"
 brew install colima docker
@@ -26,5 +27,6 @@ echo "symlinking dotfiles"
 # ln -sfn $(pwd)/.zshrc $HOME/.zshrc
 # ln -sfn $(pwd)/.zsh-theme-everforest-dark $HOME/.zsh-theme-everforest-dark
 # ln -sfn $(pwd)/.npmrc $HOME/.npmrc
+# ln -sfn $(pwd)/.config/ghostty ~/.config/ghostty
 
 echo "macos initialization complete"

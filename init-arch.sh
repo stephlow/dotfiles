@@ -2,8 +2,8 @@
 
 echo "initializing dotfiles for arch linux"
 
-echo "installing neovim, rustup, and pnpm"
-sudo pacman -S neovim rustup pnpm
+echo "installing neovim, rustup, pnpm, and ghostty"
+sudo pacman -S neovim rustup pnpm ghostty
 
 echo "installing docker"
 sudo pacman -S docker
@@ -25,5 +25,6 @@ echo "symlinking dotfiles"
 # ln -sfn $(pwd)/.gitexcludes $HOME/.gitexcludes
 # ln -sfn $(pwd)/.zshrc $HOME/.zshrc
 # ln -sfn $(pwd)/.zsh-theme-everforest-dark $HOME/.zsh-theme-everforest-dark
+# ln -sfn $(pwd)/.config/ghostty ~/.config/ghostty
 
 echo "arch initialization complete"
