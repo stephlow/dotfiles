@@ -1,8 +1,7 @@
 #!/bin/bash
 
 echo "setting up git config"
-ln -sfn $(pwd)/.gitconfig ~/.gitconfig
-ln -sfn $(pwd)/.gitexcludes ~/.gitexcludes
-ln -sfn $(pwd)/.gitmodules ~/.gitmodules
+ln -sfn $(pwd)/git/config/.gitconfig ~/.gitconfig
+ln -sfn $(pwd)/git/config/.gitexcludes ~/.gitexcludes
 
 echo "git config set up"

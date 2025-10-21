@@ -12,6 +12,6 @@ else
 fi
 
 echo "symlinking ghostty config"
-ln -sfn $(pwd)/config/ghostty ~/.config/ghostty
+ln -sfn $(pwd)/ghostty/config ~/.config/ghostty
 
 echo "ghostty initialized"
