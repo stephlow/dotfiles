@@ -3,7 +3,7 @@
 echo "updating system packages"
 
 if command -v pacman &> /dev/null; then
-    sudo pacman -Syu
+    sudo pacman -Syu --noconfirm
 elif command -v brew &> /dev/null; then
     brew update && brew upgrade
 else

@@ -3,10 +3,10 @@
 echo "installing docker"
 
 if command -v pacman &> /dev/null; then
-    sudo pacman -S docker
+    sudo pacman -S --noconfirm docker
     sudo systemctl enable docker && sudo systemctl start docker
 elif command -v brew &> /dev/null; then
-    brew install colima docker
+    brew install --yes colima docker
     colima start
 else
     echo "unsupported package manager. please install docker manually."

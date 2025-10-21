@@ -3,9 +3,9 @@
 echo "installing ghostty"
 
 if command -v pacman &> /dev/null; then
-    sudo pacman -S ghostty
+    sudo pacman -S --noconfirm ghostty
 elif command -v brew &> /dev/null; then
-    brew install ghostty
+    brew install --yes ghostty
 else
     echo "unsupported package manager"
     exit 1

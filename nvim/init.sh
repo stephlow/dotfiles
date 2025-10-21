@@ -3,9 +3,9 @@
 echo "initializing nvim"
 
 if command -v pacman &> /dev/null; then
-    sudo pacman -S neovim
+    sudo pacman -S --noconfirm neovim
 elif command -v brew &> /dev/null; then
-    brew install neovim
+    brew install --yes neovim
 else
     echo "unsupported package manager. please install neovim manually."
     exit 1
