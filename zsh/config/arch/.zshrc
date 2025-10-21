@@ -118,6 +118,6 @@ source ~/.zsh-theme-everforest-dark
 #
 #
 
-export PATH=/opt/homebrew/bin:$HOME/.cargo/bin:$HOME/.npm-global/bin:$PATH
-export VISUAL=vim
+export PATH=$HOME/.cargo/bin:$PATH
+export VISUAL=nvim
 export EDITOR="$VISUAL"

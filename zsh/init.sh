@@ -12,7 +12,11 @@ if [ ! -d "$HOME/.oh-my-zsh" ]; then
 fi
 
 echo "symlinking zsh files"
-ln -sfn $(pwd)/zsh/config/.zshrc ~/.zshrc
+if [[ "$(uname -s)" == "Darwin" ]]; then
+    ln -sfn $(pwd)/zsh/config/macos/.zshrc ~/.zshrc
+elif [[ "$(uname -s)" == "Linux" ]]; then
+    ln -sfn $(pwd)/zsh/config/arch/.zshrc ~/.zshrc
+fi
 ln -sfn $(pwd)/zsh/config/.zsh-theme-everforest-dark ~/.zsh-theme-everforest-dark
 
 echo "setting up zsh themes"
