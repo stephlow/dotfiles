@@ -4,7 +4,8 @@ echo "installing docker"
 
 if command -v pacman &> /dev/null; then
     sudo pacman -S --noconfirm docker
-    sudo systemctl enable docker && sudo systemctl start docker
+    sudo systemctl enable docker
+    sudo systemctl start docker
 elif command -v brew &> /dev/null; then
     brew install --yes colima docker
     colima start
