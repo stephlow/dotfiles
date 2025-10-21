@@ -5,6 +5,10 @@ echo "initializing dotfiles for macos"
 echo "installing neovim, pnpm, and rust"
 brew install neovim pnpm rustup
 
+echo "installing colima and docker"
+brew install colima docker
+colima start
+
 echo "adding rust components"
 rustup component add rustfmt clippy
 

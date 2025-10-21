@@ -5,6 +5,10 @@ echo "initializing dotfiles for arch linux"
 echo "installing neovim, rustup, and pnpm"
 sudo pacman -S neovim rustup pnpm
 
+echo "installing docker"
+sudo pacman -S docker
+sudo systemctl enable docker && sudo systemctl start docker
+
 echo "adding rust components"
 rustup component add rustfmt clippy
 
@@ -21,6 +25,5 @@ echo "symlinking dotfiles"
 # ln -sfn $(pwd)/.gitexcludes $HOME/.gitexcludes
 # ln -sfn $(pwd)/.zshrc $HOME/.zshrc
 # ln -sfn $(pwd)/.zsh-theme-everforest-dark $HOME/.zsh-theme-everforest-dark
-# ln -sfn $(pwd)/.npmrc $HOME/.npmrc
 
 echo "arch initialization complete"
